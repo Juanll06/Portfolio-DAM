@@ -95,3 +95,32 @@ footer {
     color: lightblue;
     text-decoration: none;
 }
+
+.btn-tema {
+    position: fixed;
+    top: 60px; 
+    right: 20px;
+    z-index: 2000;
+    padding: 10px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+body.modo-oscuro {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.modo-oscuro section, 
+body.modo-oscuro header {
+    background-color: #2d2d2d;
+    color: white;
+    border-color: #444;
+}
+
+body.modo-oscuro .menu-principal {
+    background-color: black;
+}

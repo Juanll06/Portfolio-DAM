@@ -61,16 +61,17 @@
 
         <section id="estudios">
             <h2>Estudios</h2>
-            <ul>
-                <li>
-                    <strong>Grado Superior de Desarrollo de Aplicaciones Multiplataforma</strong><br>
-                    Instituto Gregorio Prieto, Valdepeñas (En curso).
-                </li>
-                <li>
-                    <strong>Bachillerato de Letras</strong><br>
-                    Instituto Clara Campoamor, La Solana (2022-2024).
-                </li>
-            </ul>
+            <div id="lista-estudios"></div>
+
+            <button id="btn-mostrar-formulario">Añadir Nuevo Estudio</button>
+
+            <form id="formulario-estudios" class="oculto">
+                <h3>Nuevo Estudio</h3>
+                <input type="text" id="nuevo-titulo" placeholder="Título del grado" required>
+                <input type="text" id="nuevo-centro" placeholder="Centro e Institución" required>
+                <input type="text" id="nuevo-anio" placeholder="Año o periodo" required>
+                <button type="submit">Guardar Estudio</button>
+            </form>
         </section>
 
         <section id="habilidades">

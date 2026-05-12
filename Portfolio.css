@@ -124,3 +124,28 @@ body.modo-oscuro header {
 body.modo-oscuro .menu-principal {
     background-color: black;
 }
+
+.oculto {
+    display: none;
+}
+
+#formulario-estudios {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #3498db;
+    background: #f9f9f9;
+}
+
+.estudio-item {
+    margin-bottom: 15px;
+}
+
+
+#btn-mostrar-formulario {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

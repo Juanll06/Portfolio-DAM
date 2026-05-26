@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.menu-principal {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu-principal ul {
+    display: flex;         
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal li {
+    margin: 0 15px;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header, section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; 
+}
+
+header {
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+}
+
+.proyecto {
+    flex: 1;               
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.boton-proyecto {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales {
+    display: flex;         
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.boton {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.btn-tema {
+    position: fixed;
+    top: 60px; 
+    right: 20px;
+    z-index: 2000;
+    padding: 10px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+body.modo-oscuro {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.modo-oscuro section, 
+body.modo-oscuro header {
+    background-color: #2d2d2d;
+    color: white;
+    border-color: #444;
+}
+
+body.modo-oscuro .menu-principal {
+    background-color: black;
+}
+
+.oculto {
+    display: none;
+}
+
+#formulario-estudios {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #3498db;
+    background: #f9f9f9;
+}
+
+.estudio-item {
+    margin-bottom: 15px;
+}
+
+
+#btn-mostrar-formulario {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.foto-perfil {
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #38bdf8; 
+    margin-bottom: 15px;
+}
+
+.bio-github {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}

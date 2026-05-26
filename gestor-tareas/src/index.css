@@ -1,0 +1,271 @@
+:root {
+  --fondo: #0f172a;        
+  --tarjeta: #1e293b;       
+  --borde: #334155;         
+  --texto-principal: #f8fafc;
+  --texto-mutado: #94a3b8;   
+  
+  --azul: #38bdf8;
+  --rojo: #ef4444;
+  --amarillo: #f59e0b;
+  --verde: #10b981;
+}
+
+
+body {
+  margin: 0;
+  background-color: var(--fondo);
+  color: var(--texto-principal);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.contenedor-app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cabecera-app {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.barra-estadisticas {
+  background-color: var(--tarjeta);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid var(--borde);
+}
+.texto-pendiente { color: var(--amarillo); font-weight: bold; }
+.texto-completada { color: var(--verde); font-weight: bold; }
+
+
+.contenido-app, .contenido-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .contenido-app, .contenido-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formulario-tarea {
+  background-color: var(--tarjeta);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+}
+
+.grupo-formulario {
+  margin-bottom: 15px;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--texto-mutado);
+  font-size: 0.9rem;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+  color: var(--texto-principal);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.fila-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.botones-formulario {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-guardar { 
+  background-color: var(--azul); 
+  color: #0f172a; 
+  padding: 10px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  flex-grow: 1; 
+  font-weight: bold; 
+}
+
+.btn-cancelar { 
+  background-color: var(--texto-mutado); 
+  color: white; 
+  padding: 10px;
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.contenedor-filtros {
+  background-color: var(--tarjeta);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  margin-bottom: 15px;
+}
+
+.input-buscar {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+  color: var(--texto-principal);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.selectores-filtros {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.selectores-filtros select {
+  background-color: var(--fondo);
+  color: var(--texto-principal);
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid var(--borde);
+}
+
+.tarjeta-tarea {
+  background-color: var(--tarjeta);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  border-left: 6px solid #64748b;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.prioridad-alta { 
+  border-left-color: var(--rojo); 
+}
+
+.prioridad-media { 
+  border-left-color: var(--amarillo); 
+}
+
+.prioridad-baja { 
+  border-left-color: var(--verde); 
+}
+
+.tarea-completada {
+  opacity: 0.4;
+}
+
+.tarea-completada h3 { 
+  text-decoration: line-through; 
+}
+
+.zona-titulo-tarjeta { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.zona-titulo-tarjeta h3 { 
+  margin: 0; 
+  font-size: 1.1rem; 
+}
+
+.etiqueta-prioridad { 
+  background-color: var(--fondo); 
+  padding: 2px 6px; 
+  border-radius: 4px; 
+  font-size: 0.75rem; 
+  font-weight: bold; 
+  color: var(--azul); 
+}
+
+.descripcion-tarjeta { 
+  color: var(--texto-mutado); 
+  margin: 8px 0; 
+  font-size: 0.95rem; 
+}
+
+.metadatos-tarjeta { 
+  display: flex; 
+  gap: 10px; 
+  font-size: 0.8rem; 
+}
+
+.etiqueta-estado { 
+  background-color: var(--fondo); 
+  padding: 2px 6px; 
+  border-radius: 4px; 
+}
+
+.etiqueta-fecha { 
+  color: var(--azul); 
+  font-weight: bold; 
+}
+
+.acciones-tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 100px;
+}
+
+.btn-action, .btn-completar { 
+  padding: 6px 10px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 0.85rem; 
+  font-weight: 500; 
+}
+
+.btn-completar { 
+  background-color: var(--borde); 
+  color: var(--texto-principal); 
+}
+
+.btn-editar { 
+  background-color: #cbd5e1; 
+  color: #0f172a; 
+}
+
+.btn-eliminar { 
+  background-color: rgba(239, 68, 68, 0.2); 
+  color: #f87171; 
+}
+
+@media (max-width: 600px) {
+  .tarjeta-tarea { flex-direction: column; align-items: stretch; }
+  .acciones-tarjeta { flex-direction: row; }
+  .acciones-tarjeta button { flex: 1; }
+}
+
+.sin-tareas { 
+  text-align: center; 
+  color: var(--texto-mutado); 
+  margin-top: 20px; 
+}
